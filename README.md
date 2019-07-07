@@ -1,6 +1,10 @@
 # Text-classification:
 Classifies given short sentence to english or dutch using: (1) Decision Tree or (2) Adaptive Boosting with a Decision Stump. The platform required for the implementation on Python3 with the required file mentioned in the requirement.txt
 
+ ## Accuracy On a Test Set:
+    1. Using Decision Tree: 98.58
+    2. Using Adaboost: 96.6
+
  ## Files Description:
  1. data_collection.py:
      This collects the raw english and dutch sentences and stores into data.csv file
@@ -16,6 +20,8 @@ Classifies given short sentence to english or dutch using: (1) Decision Tree or 
      main program that picks classifier technique and performs one of the following:
      a. trains the given classifier with the train and test sentences with word length 10, 20, and 50 respectively
      b. predicts the given text (either english or dutch) using trained model
+ 7. writeup.pdf:
+    Detailed explanation on: Data Collection, Preprocessing, Training, and Evaluation.
      
  ## Directories Description:
     1. dataset:
@@ -43,5 +49,5 @@ Classifies given short sentence to english or dutch using: (1) Decision Tree or 
           For eg: to make prediction using classifier adaboost with a test.txt file use following command:
                   python main.py "predict" "ada" "test.txt"  
           
-         
+Please refer to the writeup.pdf for the detail in data collection, feature extraction, and the accuracy.        
  
